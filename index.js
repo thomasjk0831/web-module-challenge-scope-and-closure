@@ -18,6 +18,12 @@ function processFirstItem(stringList, callback) {
   return callback(stringList[0])
 }
 
+const processItem = str=> str+ str;
+processFirstItem(['foo', 'bar'], processItem)
+
+
+
+
 // ⭐️ Example Challenge END ⭐️
 
 
@@ -28,7 +34,8 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
- * 2. Which of the two uses a closure? How can you tell?
+ * 2. Which of the two uses a closure? How can you tell? counter1 code uses closure. Becuse the function within the function has access/scope to the 
+ * outside 'count' variable.
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
@@ -59,6 +66,7 @@ Write a function called `inning` that returns a random number of points that a t
 function inning(/*Code Here*/){
 
     /*Code Here*/
+    
 
 }
 
