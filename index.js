@@ -100,7 +100,7 @@ function finalScore(callback, numInnings){
   }
 }
 
-finalScore(inning, 9)
+console.log(finalScore(inning, 9))
 
 /* Task 4: 
 
